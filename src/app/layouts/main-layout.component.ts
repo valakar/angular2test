@@ -6,7 +6,10 @@ import { Component } from '@angular/core';
         `
         <div class="main-container">
             <app-header></app-header>
-            <router-outlet></router-outlet>
+            <div class="main-inner-container">
+                <router-outlet></router-outlet>
+                <app-sidebar></app-sidebar>
+            </div>
             <app-footer></app-footer>
         </div>`,
     styleUrls: ['main-layout.styles.sass']

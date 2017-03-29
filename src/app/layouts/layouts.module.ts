@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { MainLayoutComponent } from './main-layout.component';
-import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
+import { MainLayoutComponent } from './main-layout.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 
 @NgModule({
@@ -13,8 +14,10 @@ import { FooterComponent } from './footer/footer.component';
     declarations: [
         MainLayoutComponent,
         HeaderComponent,
-        FooterComponent
+        FooterComponent,
+        SidebarComponent
     ],
     providers: [],
 })
-export class LayoutsModule { }
+export class LayoutsModule {
+}
