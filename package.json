@@ -6,7 +6,7 @@
         "ng": "ng",
         "start": "webpack-dev-server --config config/webpack/webpack.dev.js --open --progress --profile --watch --content-base src/",
         "clean": "",
-        "clean:dist": "rimraf -rf ./dist",
+        "clean:dist": "rm -rf ./dist",
         "build": "npm run clean:dist && webpack",
         "build:prod": "npm run clean:dist && NODE_ENV='prod' webpack",
         "test": "karma start ./karma.conf.js",
@@ -67,6 +67,7 @@
         "tslint": "~4.5.0",
         "typescript": "~2.2.1",
         "url-loader": "^0.5.7",
+        "webpack": "2.3.2",
         "webpack-dev-server": "~2.3.0",
         "webpack-merge": "4.1.0",
         "yarn": "0.21.3"

@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['header.styles.sass']
 })
 export class HeaderComponent implements OnInit {
-    constructor() { }
+    public logo: String = 'assets/images/logo.jpg';
+
+    constructor() {
+    }
 
     ngOnInit(): void {
         console.log('hello world');
