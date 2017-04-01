@@ -3,10 +3,11 @@
         <img [src]="logo" alt="">
     </div>
     <div class="navbar">
-        <a href="#" class="navbar__item">Posts1</a>
-        <a href="#" class="navbar__item">Posts2</a>
-        <a href="#" class="navbar__item">Posts3</a>
-        <a href="#" class="navbar__item">Posts4</a>
-        <a href="#" class="navbar__item">Posts5</a>
+
+        <a class="navbar__item"
+           *ngFor="let item of navbarLinks"
+           [href]="item.href">
+            {{item.title}}
+        </a>
     </div>
 </div>
