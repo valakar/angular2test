@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NavbarList } from './navbar.constant';
+import { NavbarList } from '../../../fakes/navbar.constant';
 
 @Component({
     selector: 'app-header',
